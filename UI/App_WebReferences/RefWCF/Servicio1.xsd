@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" />
+  <xs:element name="UsuarioAlta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q1:UsuarioAdmin" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q2:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioAltaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioModificar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q3:UsuarioAdmin" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q4:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioModificarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioBaja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q5:UsuarioAdmin" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q6:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioBajaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarUsuarioActivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logueo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q7:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarUsuarioActivoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="BuscarUsuarioActivoResult" nillable="true" type="q8:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logueo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="LoginResult" nillable="true" type="q9:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaJuego">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="juego" nillable="true" type="q10:Juego" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q11:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaJuegoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarJuego">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="juego" nillable="true" type="q12:Juego" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q13:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarJuegoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarJuego">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usu" nillable="true" type="q14:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarJuegoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="BuscarJuegoResult" nillable="true" type="q15:Juego" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegoBaja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="juego" nillable="true" type="q16:Juego" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q17:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegoBajaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaJuegosinJugadaperoconPregunta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q18:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaJuegosinJugadaperoconPreguntaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="ListaJuegosinJugadaperoconPreguntaResult" nillable="true" type="q19:ArrayOfJuego" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegosconPreguntas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegosconPreguntasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="JuegosconPreguntasResult" nillable="true" type="q20:ArrayOfJuego" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegossinPreguntas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q21:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="JuegossinPreguntasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="JuegossinPreguntasResult" nillable="true" type="q22:ArrayOfJuego" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Asignar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="pregunta" nillable="true" type="q23:Pregunta" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="juego" nillable="true" type="q24:Juego" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q25:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AsignarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Quitar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="pregunta" nillable="true" type="q26:Pregunta" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="juego" nillable="true" type="q27:Juego" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q28:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuitarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaCategoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="categoria" nillable="true" type="q29:CategoriaPregunta" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="logueo" nillable="true" type="q30:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaCategoriaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CategoriaModificar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="categoria" nillable="true" type="q31:CategoriaPregunta" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q32:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CategoriaModificarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CategoriaBaja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="categoria" nillable="true" type="q33:CategoriaPregunta" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q34:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CategoriaBajaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCategoriaActiva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q35:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarCategoriaActivaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="BuscarCategoriaActivaResult" nillable="true" type="q36:CategoriaPregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaCategorias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q37:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaCategoriasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="ListaCategoriasResult" nillable="true" type="q38:ArrayOfCategoriaPregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaJugada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="J" nillable="true" type="q39:Jugada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaJugadaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaJugadas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaJugadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="ListaJugadasResult" nillable="true" type="q40:ArrayOfJugada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaPregunta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="pregunta" nillable="true" type="q41:Pregunta" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuario" nillable="true" type="q42:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AltaPreguntaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreguntasNuncaUsadas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q43:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreguntasNuncaUsadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="PreguntasNuncaUsadasResult" nillable="true" type="q44:ArrayOfPregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPregunta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="usuLog" nillable="true" type="q45:UsuarioAdmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarPreguntaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" minOccurs="0" name="BuscarPreguntaResult" nillable="true" type="q46:Pregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="324b252b-c2f5-4e7a-b146-63d9f04d5f26" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ServicioJuego/servicio.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Servicio.wsdl" MetadataType="Wsdl" ID="ff5199bb-b829-42a5-9026-5498c54fb697" SourceId="1" SourceUrl="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?wsdl" />
+    <MetadataFile FileName="Servicio.xsd" MetadataType="Schema" ID="397cf268-1b60-410b-9227-99aa4f5a43a0" SourceId="1" SourceUrl="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd1" />
+    <MetadataFile FileName="Servicio1.xsd" MetadataType="Schema" ID="35f05bdc-178b-4697-8787-5c37bc2a751a" SourceId="1" SourceUrl="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd0" />
+    <MetadataFile FileName="Servicio.disco" MetadataType="Disco" ID="e0c09e86-49d4-4fc5-8483-b7a96d173971" SourceId="1" SourceUrl="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?disco" />
+    <MetadataFile FileName="Servicio2.xsd" MetadataType="Schema" ID="742b2bd3-f87a-4efc-858c-b7306b960ae4" SourceId="1" SourceUrl="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

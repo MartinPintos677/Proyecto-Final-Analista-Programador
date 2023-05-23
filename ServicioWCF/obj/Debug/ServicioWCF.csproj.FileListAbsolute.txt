@@ -1,0 +1,14 @@
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\obj\Debug\ServicioWCF.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\obj\Debug\ServicioWCF.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\ServicioWCF.dll.config
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\ServicioWCF.dll
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\ServicioWCF.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\EntidadesCompartidas.dll
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\Logica.dll
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\Persistencia.dll
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\EntidadesCompartidas.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\Logica.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\bin\Persistencia.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\obj\Debug\ServicioWCF.csproj.CopyComplete
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\obj\Debug\ServicioWCF.dll
+C:\Users\acer\source\repos\ProyectoFinal2\ServicioWCF\obj\Debug\ServicioWCF.pdb

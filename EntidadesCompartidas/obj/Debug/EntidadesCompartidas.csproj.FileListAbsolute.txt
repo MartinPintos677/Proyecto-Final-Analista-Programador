@@ -1,0 +1,6 @@
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.csproj.AssemblyReference.cache

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>http://localhost/ServicioJuego</_PublishTargetUrl>
+    <History>True|2023-03-01T16:26:24.5449242Z;False|2023-03-01T13:25:28.4309223-03:00;True|2023-02-19T15:10:14.0099315-03:00;True|2023-02-18T19:00:46.6777334-03:00;True|2023-02-18T17:59:10.6507470-03:00;True|2023-02-18T17:55:32.0042262-03:00;True|2023-02-18T13:55:21.4459998-03:00;True|2023-02-16T14:04:32.4348362-03:00;True|2023-02-16T13:41:34.9925382-03:00;True|2023-02-15T21:51:15.9786018-03:00;True|2023-02-15T21:49:04.0787413-03:00;True|2023-02-13T22:45:56.9423695-03:00;True|2023-02-13T21:06:47.9182717-03:00;True|2023-02-13T20:55:08.6924023-03:00;True|2023-02-13T19:21:47.3457106-03:00;True|2023-02-13T19:20:33.6689785-03:00;True|2023-02-13T19:17:46.5334550-03:00;True|2023-02-12T16:33:21.9037060-03:00;True|2023-02-10T20:20:03.8980171-03:00;True|2023-02-10T20:14:51.4436791-03:00;True|2023-02-10T19:39:48.6388653-03:00;True|2023-02-09T00:59:49.6786360-03:00;True|2023-02-09T00:59:14.1100347-03:00;True|2023-02-09T00:58:11.1873321-03:00;True|2023-02-09T00:56:39.5291513-03:00;True|2023-02-09T00:33:07.2884548-03:00;True|2023-02-09T00:24:46.8393457-03:00;True|2023-02-09T00:19:53.7613870-03:00;True|2023-02-09T00:18:34.6898526-03:00;True|2023-02-09T00:15:54.0556090-03:00;True|2023-02-08T22:23:57.8945945-03:00;True|2023-02-08T22:17:16.3402563-03:00;True|2023-02-08T18:36:49.0028849-03:00;True|2023-02-08T18:34:48.5153391-03:00;True|2023-02-08T18:29:39.6127572-03:00;True|2023-02-08T12:16:27.8476211-03:00;False|2023-02-08T12:13:35.5352009-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntidadesCompartidas.dll">
+      <publishTime>02/19/2023 15:09:42</publishTime>
+    </File>
+    <File Include="bin/EntidadesCompartidas.pdb">
+      <publishTime>02/19/2023 15:09:42</publishTime>
+    </File>
+    <File Include="bin/Logica.dll">
+      <publishTime>03/01/2023 13:25:27</publishTime>
+    </File>
+    <File Include="bin/Logica.pdb">
+      <publishTime>03/01/2023 13:25:27</publishTime>
+    </File>
+    <File Include="bin/Persistencia.dll">
+      <publishTime>03/01/2023 13:25:26</publishTime>
+    </File>
+    <File Include="bin/Persistencia.pdb">
+      <publishTime>03/01/2023 13:25:26</publishTime>
+    </File>
+    <File Include="bin/ServicioWCF.dll">
+      <publishTime>03/01/2023 13:26:23</publishTime>
+    </File>
+    <File Include="bin/ServicioWCF.pdb">
+      <publishTime>03/01/2023 13:26:23</publishTime>
+    </File>
+    <File Include="Servicio.svc">
+      <publishTime>02/06/2023 11:30:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/19/2023 15:10:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

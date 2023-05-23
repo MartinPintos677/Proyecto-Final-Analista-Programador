@@ -1,0 +1,11 @@
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\Logica.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\Logica.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\Persistencia.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\bin\Debug\Persistencia.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\obj\Debug\Logica.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Logica\obj\Debug\Logica.pdb

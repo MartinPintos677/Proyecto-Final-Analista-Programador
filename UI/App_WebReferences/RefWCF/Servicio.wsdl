@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Servicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://laptop-ikis7j92/ServicioJuego/Servicio.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicio_UsuarioAlta_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioAlta" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_UsuarioAlta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioAltaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_UsuarioModificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioModificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_UsuarioModificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_UsuarioBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioBaja" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_UsuarioBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarUsuarioActivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarUsuarioActivo" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarUsuarioActivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarUsuarioActivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaJuego" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaJuego_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ModificarJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarJuego" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ModificarJuego_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarJuego" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarJuego_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegoBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:JuegoBaja" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegoBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JuegoBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaJuegosinJugadaperoconPregunta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaJuegosinJugadaperoconPregunta" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaJuegosinJugadaperoconPregunta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaJuegosinJugadaperoconPreguntaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegosconPreguntas_InputMessage">
+    <wsdl:part name="parameters" element="tns:JuegosconPreguntas" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegosconPreguntas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JuegosconPreguntasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegossinPreguntas_InputMessage">
+    <wsdl:part name="parameters" element="tns:JuegossinPreguntas" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_JuegossinPreguntas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JuegossinPreguntasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Asignar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Asignar" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Asignar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AsignarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Quitar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Quitar" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_Quitar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuitarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaCategoria_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaCategoria" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaCategoria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_CategoriaModificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:CategoriaModificar" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_CategoriaModificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CategoriaModificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_CategoriaBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:CategoriaBaja" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_CategoriaBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CategoriaBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarCategoriaActiva_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCategoriaActiva" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarCategoriaActiva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarCategoriaActivaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaCategorias_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaCategorias" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaCategorias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaCategoriasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaJugada_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaJugada" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaJugada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaJugadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaJugadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaJugadas" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_ListaJugadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaJugadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaPregunta_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaPregunta" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_AltaPregunta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaPreguntaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_PreguntasNuncaUsadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreguntasNuncaUsadas" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_PreguntasNuncaUsadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreguntasNuncaUsadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarPregunta_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPregunta" />
+  </wsdl:message>
+  <wsdl:message name="IServicio_BuscarPregunta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPreguntaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicio">
+    <wsdl:operation name="UsuarioAlta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/UsuarioAlta" message="tns:IServicio_UsuarioAlta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/UsuarioAltaResponse" message="tns:IServicio_UsuarioAlta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioModificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/UsuarioModificar" message="tns:IServicio_UsuarioModificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/UsuarioModificarResponse" message="tns:IServicio_UsuarioModificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioBaja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/UsuarioBaja" message="tns:IServicio_UsuarioBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/UsuarioBajaResponse" message="tns:IServicio_UsuarioBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuarioActivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscarUsuarioActivo" message="tns:IServicio_BuscarUsuarioActivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscarUsuarioActivoResponse" message="tns:IServicio_BuscarUsuarioActivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/Login" message="tns:IServicio_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/LoginResponse" message="tns:IServicio_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AltaJuego" message="tns:IServicio_AltaJuego_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AltaJuegoResponse" message="tns:IServicio_AltaJuego_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ModificarJuego" message="tns:IServicio_ModificarJuego_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ModificarJuegoResponse" message="tns:IServicio_ModificarJuego_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscarJuego" message="tns:IServicio_BuscarJuego_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscarJuegoResponse" message="tns:IServicio_BuscarJuego_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JuegoBaja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/JuegoBaja" message="tns:IServicio_JuegoBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/JuegoBajaResponse" message="tns:IServicio_JuegoBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaJuegosinJugadaperoconPregunta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ListaJuegosinJugadaperoconPregunta" message="tns:IServicio_ListaJuegosinJugadaperoconPregunta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ListaJuegosinJugadaperoconPreguntaResponse" message="tns:IServicio_ListaJuegosinJugadaperoconPregunta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JuegosconPreguntas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/JuegosconPreguntas" message="tns:IServicio_JuegosconPreguntas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/JuegosconPreguntasResponse" message="tns:IServicio_JuegosconPreguntas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JuegossinPreguntas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/JuegossinPreguntas" message="tns:IServicio_JuegossinPreguntas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/JuegossinPreguntasResponse" message="tns:IServicio_JuegossinPreguntas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Asignar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/Asignar" message="tns:IServicio_Asignar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AsignarResponse" message="tns:IServicio_Asignar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Quitar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/Quitar" message="tns:IServicio_Quitar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/QuitarResponse" message="tns:IServicio_Quitar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaCategoria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AltaCategoria" message="tns:IServicio_AltaCategoria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AltaCategoriaResponse" message="tns:IServicio_AltaCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CategoriaModificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/CategoriaModificar" message="tns:IServicio_CategoriaModificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/CategoriaModificarResponse" message="tns:IServicio_CategoriaModificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CategoriaBaja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/CategoriaBaja" message="tns:IServicio_CategoriaBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/CategoriaBajaResponse" message="tns:IServicio_CategoriaBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCategoriaActiva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscarCategoriaActiva" message="tns:IServicio_BuscarCategoriaActiva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscarCategoriaActivaResponse" message="tns:IServicio_BuscarCategoriaActiva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaCategorias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ListaCategorias" message="tns:IServicio_ListaCategorias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ListaCategoriasResponse" message="tns:IServicio_ListaCategorias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaJugada">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AltaJugada" message="tns:IServicio_AltaJugada_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AltaJugadaResponse" message="tns:IServicio_AltaJugada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaJugadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/ListaJugadas" message="tns:IServicio_ListaJugadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/ListaJugadasResponse" message="tns:IServicio_ListaJugadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaPregunta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/AltaPregunta" message="tns:IServicio_AltaPregunta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/AltaPreguntaResponse" message="tns:IServicio_AltaPregunta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreguntasNuncaUsadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/PreguntasNuncaUsadas" message="tns:IServicio_PreguntasNuncaUsadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/PreguntasNuncaUsadasResponse" message="tns:IServicio_PreguntasNuncaUsadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPregunta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicio/BuscarPregunta" message="tns:IServicio_BuscarPregunta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicio/BuscarPreguntaResponse" message="tns:IServicio_BuscarPregunta_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicio" type="tns:IServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UsuarioAlta">
+      <soap:operation soapAction="http://tempuri.org/IServicio/UsuarioAlta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioModificar">
+      <soap:operation soapAction="http://tempuri.org/IServicio/UsuarioModificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioBaja">
+      <soap:operation soapAction="http://tempuri.org/IServicio/UsuarioBaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuarioActivo">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscarUsuarioActivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IServicio/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaJuego">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AltaJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarJuego">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ModificarJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarJuego">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscarJuego" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JuegoBaja">
+      <soap:operation soapAction="http://tempuri.org/IServicio/JuegoBaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaJuegosinJugadaperoconPregunta">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ListaJuegosinJugadaperoconPregunta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JuegosconPreguntas">
+      <soap:operation soapAction="http://tempuri.org/IServicio/JuegosconPreguntas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JuegossinPreguntas">
+      <soap:operation soapAction="http://tempuri.org/IServicio/JuegossinPreguntas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Asignar">
+      <soap:operation soapAction="http://tempuri.org/IServicio/Asignar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Quitar">
+      <soap:operation soapAction="http://tempuri.org/IServicio/Quitar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaCategoria">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AltaCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoriaModificar">
+      <soap:operation soapAction="http://tempuri.org/IServicio/CategoriaModificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoriaBaja">
+      <soap:operation soapAction="http://tempuri.org/IServicio/CategoriaBaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCategoriaActiva">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscarCategoriaActiva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaCategorias">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ListaCategorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaJugada">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AltaJugada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaJugadas">
+      <soap:operation soapAction="http://tempuri.org/IServicio/ListaJugadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaPregunta">
+      <soap:operation soapAction="http://tempuri.org/IServicio/AltaPregunta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreguntasNuncaUsadas">
+      <soap:operation soapAction="http://tempuri.org/IServicio/PreguntasNuncaUsadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPregunta">
+      <soap:operation soapAction="http://tempuri.org/IServicio/BuscarPregunta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Servicio">
+    <wsdl:port name="BasicHttpBinding_IServicio" binding="tns:BasicHttpBinding_IServicio">
+      <soap:address location="http://laptop-ikis7j92/ServicioJuego/Servicio.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

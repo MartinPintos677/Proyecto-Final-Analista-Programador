@@ -1,0 +1,9 @@
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\obj\Debug\Persistencia.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\acer\source\repos\ProyectoFinal2\Persistencia\obj\Debug\Persistencia.pdb

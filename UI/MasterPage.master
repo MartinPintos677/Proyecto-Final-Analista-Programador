@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Content/bootstrap.css" rel="stylesheet"/> 
+    <script src="Scripts/bootstrap.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color: #000000;
+        }
+        .auto-style2 {
+            width: 90px;
+            height: 50px;
+            margin-left: 20px;
+        }
+        .auto-style3 {
+            background-color: #000000;
+            width: 182px;
+        }
+        .auto-style5 {
+            background-color: #000000;
+            width: 1035px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width:100%;">
+                <tr>
+                    <td class="auto-style3">
+                        <img alt="imgMaster" class="auto-style2" longdesc="imgMaster" src="img/Logo.png" /></td>
+                    <td class="auto-style5">
+                        <asp:Menu ID="Menu1" runat="server" ForeColor="White" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem Text="ABM Usuarios |" Value="ABM de Usuarios" NavigateUrl="~/ABMdeUsuarios.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ABM Categorías |" Value="ABM Categorías" NavigateUrl="~/ABMdeCategorias.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ABM Juegos |" Value="ABM Juegos" NavigateUrl="~/ABMdeJuegos.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Manejo de Preguntas de Juego |" Value="Manejo de Preguntas de Juego" NavigateUrl="~/ManejoPreguntasdeJuego.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Alta Preguntas |" Value="Alta Preguntas" NavigateUrl="~/AltaPreguntas.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Listados sin Asignación" Value="Listados sin Asignación" NavigateUrl="~/ListadosSinAsignacion.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle ForeColor="#2ECC71" />
+                        </asp:Menu>
+                    </td>
+                    <td class="auto-style1">
+                        <asp:HyperLink ID="hlinkSalir" runat="server" NavigateUrl="~/Principal.aspx">Cerrar Sessión</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
