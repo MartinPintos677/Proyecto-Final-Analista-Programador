@@ -6,9 +6,9 @@ ANALISTA PROGRAMADOR WEB .NET 2023
 
 Generalidades
 
- La entrega final se hará durante la última clase de tutoría. Durante las clases de tutorías deberán
+La entrega final se hará durante la última clase de tutoría. Durante las clases de tutorías deberán
 realizarse entregas parciales de acuerdo a lo establecido en la sección Tutorías & Entregas.
- Se deberá realizar la entrega mediante correo electrónico, del software junto con toda la
+Se deberá realizar la entrega mediante correo electrónico, del software junto con toda la
 documentación exigida en la sección Requerimientos de Entrega:
  Asunto: Entrega Proyecto Final ANP 2021
  Destinatarios: segundoanalista@bios.edu.uy y tutor asignado (OBLIGATORIO)
