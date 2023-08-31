@@ -135,6 +135,7 @@ Requerimientos de Implementación
 
  Implementación completa del sistema con tecnologías .NET en lenguaje C#. Obligatorio la
 entrega en Visual Studio 2015.
+
  La información deberá almacenarse obligatoriamente en una base de datos SQL Server 2008
 R2
 
