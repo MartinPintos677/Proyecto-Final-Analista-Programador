@@ -26,6 +26,7 @@ a) Asunto: Inscripción a Proyecto Final Segundo Año
 b) Contenido:
 a. Cedula y Nombre de todos los integrantes del grupo que se presenta
 b. Franja Horaria a la que se concurre a clase
+
  La asistencia a la última tutoría es obligatoria para todos los miembros del grupo ya que se
 realizara la defensa en máquina del proyecto.
 Idea General
@@ -37,10 +38,13 @@ que jugar será de acceso público.
 Arquitectura Solicitada
  Se podrán acceder a la información y se podrán realizar tareas / juegos a través de un sitio web,
 que será publicado en un servidor contratado para dicha funcionalidad.
+
  La lógica de negocio del sistema estará ubicada dentro de otro servidor, y se podrá acceder a ella
 mediante un contrato de servicio publicado en el mismo servidor.
+
  La base de datos estará instalada en un servidor de datos. La persistencia se comunicara con
 dicho servidor mediante ADO.NET.
+
 Proyecto Final Segundo Año Página 2 de 5 Carrera Analista de Sistemas
 Funcionalidades Mínimas del Sitio Web
 Formulario Web: Principal (formulario por defecto del sitio)
