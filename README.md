@@ -1,4 +1,4 @@
-# Letra proyecto_final_analista_programador
+# Letra Proyecto Final Analista Programador
 
 PROYECTO FINAL DE SEGUNDO AÑO
 CARRERA DE ANALISTA DE SISTEMAS
@@ -11,9 +11,13 @@ realizarse entregas parciales de acuerdo a lo establecido en la sección Tutorí
 Se deberá realizar la entrega mediante correo electrónico, del software junto con toda la
 documentación exigida en la sección Requerimientos de Entrega:
  Asunto: Entrega Proyecto Final ANP 2021
+
  Destinatarios: segundoanalista@bios.edu.uy y tutor asignado (OBLIGATORIO)
+
  Compartido por Drive: documentación y solución completa
+
  Cuerpo: Nombre y Cedula de los integrantes del grupo que realiza la entrega
+
  Se deberán formar grupos de 1 a 3 personas, los cuales deberán inscribirse en bedelía
 desde el día 21 de noviembre hasta el día 02 de diciembre. No se aceptaran
 inscripciones fuera de fecha. Luego de esto, Bedelía publicara la asignación de tutores así
@@ -124,19 +128,23 @@ B. Preguntas nunca usadas: despliega todas las preguntas que no estén asociadas
 C. Juegos vacíos: despliega aquellos juegos que no tienen preguntas asignadas
 Proyecto Final Segundo Año Página 4 de 5 Carrera Analista de Sistemas
 Requerimientos de Implementación
+
  Implementación completa del sistema con tecnologías .NET en lenguaje C#. Obligatorio la
 entrega en Visual Studio 2015.
  La información deberá almacenarse obligatoriamente en una base de datos SQL Server 2008
 R2
+
  El script de la base de datos debe generarse manualmente, sin la ayuda de un asistente. Deberá
 contener el Esquema de creación de la base de datos, Stored Procedures necesarios para
 realizar todas las tareas solicitadas, Creación de usuarios y permisos solicitados y necesarios,
 e Inserción de datos de prueba. Las restricciones sobre datos, deberán realizarse en la propia
 estructura de la tabla (uso de los modificadores unique, check, default).
+
  Las eliminaciones a nivel de la base de datos deberán ser físicas o lógicas en función de las
 posibilidades. Es decir, si un elemento a eliminar no tiene elementos dependientes dentro de los
 registros de la base de datos, o estos se pueden eliminar, se elimina físicamente; de lo contrario
 se hará una eliminación lógica. Obligatorio de implementar
+
  Para el desarrollo del sistema utilizar la arquitectura en 3 capas vista en el curso, mediante la
 utilización de bibliotecas de clases.
 
@@ -156,31 +164,51 @@ comunicación de errores entre componentes
 realizarse mediante contratos de servicio (WCF).
 
  Uso obligatorio de MasterPage para el manejo de usuarios y permisos de acceso
+
 Requerimientos de Entrega:
  Modelo Conceptual.
+
  MER
+
  Diagrama de Clases completo de la Arquitectura en capas (incluye a todos los componentes,
 clases, interfaces y relaciones entre ellos)
+
  Solución completa del Software
+
  Script de la base de datos
+
 Nota: todos los diagramas deberán ser generados con una herramienta para lenguaje UML. Estos deberán ser entregados
 en forma digital: una copia del archivo original del diagrama y una copia en formato PDF o JPG
 Proyecto Final Segundo Año Página 5 de 5 Carrera Analista de Sistemas
 Tutorías y Entregas
 A continuación se detallan las entregas sugeridas:
+
  Primera Sesión (semana del 23/01 al 27/01):
+
 o Modelo Conceptual
+
 o DER
+
 o Script BD completa (tablas – procedimientos – manejo de usuarios y baja lógica)
+
 o Capa de Entidades Compartidas completa
+
 o Capa de Persistencia completa
+
  Segunda Sesión (semana del 13/02 al 17/02):
+
 o Capa de Lógica completa
+
 o Servicio WCF completo y publicado
+
 o UI: estructura del sitio y armado del logueo
+
 o UI: mantenimiento de usuarios completo
+
  Tercera Sesión (semana del 13/03 al 17/03):
+
 o Entrega de todo lo solicitado en el punto Requerimientos de Entrega.
+
 o Defensa obligatoria del proyecto. Para ello el grupo deberá concurrir antes de su horario
 de tutoría, para realizar la instalación del sistema. Dicha instalación deberá respetar la
 arquitectura propuesta. 
